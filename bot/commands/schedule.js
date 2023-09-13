@@ -4,14 +4,14 @@ const { DateTime } = require('luxon');
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('schedule')
-		.setDescription('Write comma separated dates, and I will do the rest')
+		.setDescription('Propose dates for the next session')
     .addStringOption(option => 
       option.setName('msg')
       .setDescription('an intro message before providing the schedule options')
       .setRequired(true))
     .addStringOption(option => 
       option.setName('dates')
-      .setDescription('comma separated dates and times, (format is dayoftheweek mm/dd hh:mm est, ...)')
+      .setDescription('pairs of dates and times (mm/dd hh:mm, mm/dd hh:mm,...)')
       .setRequired(true)),
     // .setDefaultMemberPermissions(PermissionFlagsBits.BanMembers),
 	async execute(interaction) {
