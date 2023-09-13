@@ -13,7 +13,6 @@ module.exports = {
       option.setName('dates')
       .setDescription('pairs of dates and times (mm/dd hh:mm, mm/dd hh:mm,...)')
       .setRequired(true)),
-    // .setDefaultMemberPermissions(PermissionFlagsBits.BanMembers),
 	async execute(interaction) {
     const introMessage = interaction.options.getString('msg');
     const datesString = interaction.options.getString('dates');
