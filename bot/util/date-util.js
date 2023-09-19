@@ -50,7 +50,7 @@ function generateDateString(month,day,hour,minute,time,timezone) {
   if (date < DateTime.now()) {
     const year = date.year;
     date = date.set({ year: year+1 });
-    optionalYearString = `${date.year+1} `;
+    optionalYearString = `${date.year} `;
   }
 
   const weekday = weekdays[date.weekday-1];
