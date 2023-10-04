@@ -15,4 +15,5 @@ module.exports = {
     console.log(roll.output);
 		await interaction.reply(`You rolled \`\`\`${roll.output}\`\`\``);
 	},
+  global: true,
 };

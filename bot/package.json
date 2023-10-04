@@ -4,7 +4,9 @@
   "description": "Slim's assistant",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prerefresh-commands": "node delete-commands",
+    "refresh-commands": "node deploy-commands"
   },
   "author": "Kevin Dyer",
   "license": "ISC",

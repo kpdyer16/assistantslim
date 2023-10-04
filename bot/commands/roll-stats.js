@@ -15,4 +15,5 @@ module.exports = {
 
 		await interaction.reply(`Your new character's stats are: \`\`\`${stats}\`\`\``);
 	},
+  global: true,
 };
